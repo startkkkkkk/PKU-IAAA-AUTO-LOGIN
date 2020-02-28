@@ -4,7 +4,9 @@
 ## Introduction
 
 Logging in iaaa.pku.edu.cn automatically. Including course, elective, portal ......
-![image](https://raw.githubusercontent.com/fuzhenxin/PKU-IAAA-AUTO-LOGIN/master/pic/example.png)
+![image](https://github.com/fuzhenxin/PKU-IAAA-AUTO-LOGIN/raw/master/pic/example.png)
+
+
 #### How to use it
 - Install the extension from .
 - Click the PKU logo in the upper right of Chrome.
@@ -15,8 +17,8 @@ Logging in iaaa.pku.edu.cn automatically. Including course, elective, portal ...
 - "Clear username and password": Delete them from your computer and stop auto-login.
 - "Start Auto-login": Start automatically login using saved username and password.
 - "Stop Auto-login":  Stop automatically login.
-  
-  ## 中文版本介绍
+
+## 中文版本介绍
 自动登录北京大学身份验证网站，包括课程网，选课网，门户网...
 
 #### 如何使用
