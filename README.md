@@ -14,7 +14,7 @@ Logging in iaaa.pku.edu.cn automatically. Including course, elective, portal ...
 - Click "Save and Start" button to automatically login the IAAA authorized website.
 - 
 #### The following operations are allowed:
-- "Clear username and password": Delete them from your computer and stop auto-login.
+- "Clean username and password": Delete them from your computer and stop auto-login.
 - "Start Auto-login": Start automatically login using saved username and password.
 - "Stop Auto-login":  Stop automatically login.
 
@@ -28,7 +28,7 @@ Logging in iaaa.pku.edu.cn automatically. Including course, elective, portal ...
 - 点击"Save and Start"开始体验自动登录IAAA网页。
 
 #### The following operations are allowed:
-- "Clear username and password": 清楚本地存储的用户名密码并停止自动登录.
+- "Clean username and password": 清楚本地存储的用户名密码并停止自动登录.
 - "Start Auto-login": 开始自动登录，利用已经存储的用户名密码.
 - "Stop Auto-login":  停止自动登录.  
   
