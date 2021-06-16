@@ -23,7 +23,7 @@ Logging in iaaa.pku.edu.cn automatically. Including course, elective, portal ...
 
 
 #### How to use it
-- Install the extension from .
+- Install the extension from [https://chrome.google.com/webstore/detail/pku-iaaa-auto-login/nhkdjckmpfgpmlclnnfkchgleckdmjcj](https://chrome.google.com/webstore/detail/pku-iaaa-auto-login/nhkdjckmpfgpmlclnnfkchgleckdmjcj).
 - Click the PKU logo in the upper right of Chrome.
 - Input the username and password of your PKU account.
 - Click "Save and Start" button to automatically login the IAAA authorized website.
