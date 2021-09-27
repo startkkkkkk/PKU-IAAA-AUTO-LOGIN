@@ -1,11 +1,22 @@
 document.getElementById('clickme_save').onclick=saveconfig;
 document.getElementById('clickme_clear').onclick=clearlogin;
-document.getElementById('clickme_start').onclick=startlogin;
-document.getElementById('clickme_stop').onclick=stoplogin;
+document.getElementById("cb").onclick=autoLoginToggleChange;
 
+chrome.storage.sync.get(["use_login","username"], function(items) {
+  if (items["username"]!="N"&&items["username"]!=undefined){
+  document.getElementById("username").value=items["username"];
+  document.getElementById("clickme_save").value="Update";
+  }
+  else{
+    // No account data
+    document.getElementById("clickme_clear").style.display = "none";
+  }
+  if (items["use_login"]=="Y") {
+    document.getElementById("cb").checked=true;
+  }
+});
 
 function saveconfig(){
-
   // Check browser support
   if (typeof(Storage) != "undefined") {
 
@@ -27,21 +38,6 @@ function saveconfig(){
   }
 }
 
-function startlogin(){
-
-  // Store
-  chrome.storage.sync.set({'use_login': "Y",}, function() {
-      console.log('Settings saved: start login');
-  });
-}
-
-function stoplogin(){
-
-  // Store
-  chrome.storage.sync.set({'use_login': "N",}, function() {
-      console.log('Settings saved: stop login');
-  });
-}
 
 function clearlogin(){
 
@@ -49,4 +45,24 @@ function clearlogin(){
   chrome.storage.sync.set({'username': "N", 'password': "N", 'use_login': "N",}, function() {
       console.log('Settings saved: clear login');
   });
+  location.reload()
 }
+
+function autoLoginToggleChange(){
+  if (document.getElementById("cb").checked) {
+        // Store
+        chrome.storage.sync.set({'use_login': "Y",}, function() {
+          console.log('Settings saved: start login');
+      });
+  }
+  else {
+        // Store
+        chrome.storage.sync.set({'use_login': "N",}, function() {
+          console.log('Settings saved: stop login');
+      });
+
+  }
+
+
+}
+

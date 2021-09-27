@@ -2,34 +2,42 @@
 <html>
 <head>
 <script type="text/javascript" async src="popup.js"></script>
+<link rel="stylesheet" href="Toggle-Switch.css">
 </head>
 
-<body>
+<body style="background: #EEEEEE;"> 
     <h2 align="center">PKU-IAAA AUTO LOGIN</h2>
 
     <table>
-        <tr>
-            <td>Username:<td><input id="username" type="text" name="uname">
-        </tr>
+        <tbody><tr>
+            <td>Username:</td><td><input id="username" type="text" name="uname">
+        </td></tr>
 
         <tr>
-            <td>Password:<td><input id="passwd" type="password" name="pass">
-        </tr>
+            <td>Password:</td><td><input id="passwd" type="password" name="pass">
+        </td></tr>
 
         <tr>
-        <td> <td>
-            <input id="clickme_save" type="button" value="Save and Start" />
-            <input id="clickme_clear" type="button" value="Clean Username and Password" />
-            <input id="clickme_start" type="button" value="Start Auto-login" />
-            <input id="clickme_stop" type="button" value="Stop Auto-login" />
-        </tr>
-
-</table>
+        <td> </td><td>
+            <input id="clickme_save" type="button" value="Save">
+            <input id="clickme_clear" type="button" value="Clear">
+            
+        </td></tr>
+        <tr>
+        <td>AutoLogin:</td><td>
+        <label class="switch" id="autoLoginToggle">
+  <input id="cb" type="checkbox">
+  <span class="slider round"></span>
+</label>
+        </td></tr>
+</tbody></table>
 
 <div id="result"></div>
 
 <a target="_blank" href="https://github.com/fuzhenxin/PKU-IAAA-AUTO-LOGIN/blob/master/README.md">How to use this tool.</a>
-<p>&copy;PKU-IAAA 2020</p>
+<p>© PKU-IAAA 2021</p>
+
+
 	
 
 </body>
