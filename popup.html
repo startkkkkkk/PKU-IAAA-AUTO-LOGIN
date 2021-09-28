@@ -2,43 +2,54 @@
 <html>
 <head>
 <script type="text/javascript" async src="popup.js"></script>
-<link rel="stylesheet" href="Toggle-Switch.css">
+<link href="Toggle-Switch.css" rel="stylesheet">
+<link href="bootstrap.css" rel="stylesheet"> 
 </head>
 
-<body style="background: #EEEEEE;"> 
-    <h2 align="center">PKU-IAAA AUTO LOGIN</h2>
+<body style="width: 220px;padding: 4%;background-color:	#EEEEEE;"> 
+    <h4 style="margin-left: 3px;">PKU-IAAA AUTO LOGIN</h4>
 
-    <table>
-        <tbody><tr>
-            <td>Username:</td><td><input id="username" type="text" name="uname">
-        </td></tr>
+    <table><tbody>
+        <tr>
+            <td>Username:</td>
+            <td>
+                <input class="form-control" style="height:25px;margin: 0 2% 2px 2%" id="username" type="text" name="uname">
+            </td>
+        </tr>
 
         <tr>
-            <td>Password:</td><td><input id="passwd" type="password" name="pass">
-        </td></tr>
+            <td>Password:</td>
+            <td>
+                <input class="form-control" style="height:25px;margin: 2px 2% 0 2%;" id="passwd" type="password" name="pass">
+            </td>
+        </tr>
+    </tbody></table>
+    
+    <div id="buttonGroup" style="overflow:hidden;margin: 12px 8% 12px 7%; width:85%;">
+        <div style="width:47%;float:left;overflow:hidden;margin-right:3%;"> 
+            <input id="clickme_save" class="btn btn-block btn-primary" type="button" value="Save">
+        </div> 
+        <div style="margin-left:3%;width:47%;float:left;overflow:hidden;"> 
+            <input id="clickme_clear" class="btn btn-block btn-warning"  type="button" value="Clear">
+        </div> 
+    </div>
 
-        <tr>
-        <td> </td><td>
-            <input id="clickme_save" type="button" value="Save">
-            <input id="clickme_clear" type="button" value="Clear">
-            
-        </td></tr>
-        <tr>
-        <td>AutoLogin:</td><td>
-        <label class="switch" id="autoLoginToggle">
-  <input id="cb" type="checkbox">
-  <span class="slider round"></span>
-</label>
-        </td></tr>
-</tbody></table>
+    <div id="autoLoginToggle" style="overflow:hidden;margin:2%;">
+        <div style="height:28px;padding:4px;width:52%;float:left;overflow:hidden;"> 
+            <p style="text-align:right;margin:0px ;">AutoLogin:</p>
+        </div> 
+        <div style="vertical-align:middle;margin-left:3%;width:42%;float:left;overflow:hidden;"> 
+            <label class="switch" id="autoLoginToggle">
+                <input id="cb" type="checkbox">
+                <span class="slider round"></span>
+            </label>
+        </div> 
+    </div>
 
 <div id="result"></div>
 
 <a target="_blank" href="https://github.com/fuzhenxin/PKU-IAAA-AUTO-LOGIN/blob/master/README.md">How to use this tool.</a>
 <p>© PKU-IAAA 2021&nbsp&nbsp(V1.4)</p>
-
-
-	
 
 </body>
 </html>
