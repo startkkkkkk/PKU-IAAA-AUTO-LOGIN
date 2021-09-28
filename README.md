@@ -1,7 +1,7 @@
 # PKU-IAAA-AUTO-LOGIN
 
 ## 中文版本介绍
-![image](https://github.com/startkkkkkk/PKU-IAAA-AUTO-LOGIN/blob/master/pic/screenshot.jpg)
+![image](https://github.com/startkkkkkk/PKU-IAAA-AUTO-LOGIN/blob/master/pic/screenshot.png)
 自动登录北京大学身份验证网站，包括课程网，选课网，门户网...
 
 #### 如何使用
