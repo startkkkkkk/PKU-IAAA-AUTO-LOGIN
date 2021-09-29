@@ -1,0 +1,1 @@
+window.location=document.getElementsByClassName('login_stu_a')[0].href
