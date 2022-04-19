@@ -10,7 +10,11 @@
    {
       "js" : [ "course.js" ],
       "matches": [ "https://course.pku.edu.cn/*","https://courses.pku.edu.cn/*"]
-  }
+   } ,
+   {
+      "js" : [ "mail.js" ],
+      "matches": [ "https://mail.pku.edu.cn/"]
+   }
 ],
    "description": "Automatic PKU-IAAA login. Just you need to save it once in the Popup and leave it on the extension.",
    "icons": {
